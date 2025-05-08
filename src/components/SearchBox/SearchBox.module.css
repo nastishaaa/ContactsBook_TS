@@ -1,0 +1,21 @@
+
+.input{
+    width: 260px;
+    border: 1px solid #ccc;
+    color: black;
+
+}
+
+.input:focus, input:hover{
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 15px;
+}

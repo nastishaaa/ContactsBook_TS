@@ -1,0 +1,16 @@
+.navText{
+    text-decoration: none;
+    color: azure;
+
+}
+
+.navText:hover, .navText:focus{
+    color: #9fa8da;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
