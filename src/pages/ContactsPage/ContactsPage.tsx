@@ -1,8 +1,6 @@
 import { selectIsLoading, selectError } from "../../redux/contacts/selectors"
-import { useDispatch } from "react-redux";
-import { lazy } from "react";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
 import { fetchContacts } from "../../redux/contacts/operations";
 import c from './ContactsPage.module.css'
 
@@ -11,9 +9,9 @@ import SearchBox from '../../components/SearchBox/SearchBox';
 import ContactList from '../../components/ContactList/ContactList';
 
 export default function ContactsPage() {
-    const dispatch = useDispatch();
-    const isLoading = useSelector(selectIsLoading);
-    const isError = useSelector(selectError);
+    const dispatch = useAppDispatch();
+    const isLoading = useAppSelector(selectIsLoading);
+    const isError = useAppSelector(selectError);
 
     useEffect(() => {
         dispatch(fetchContacts());

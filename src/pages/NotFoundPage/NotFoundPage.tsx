@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import c from './NotFoundPage.module.css';
 
 export default function NotFoundPage() {
